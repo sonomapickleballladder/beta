@@ -6,3 +6,5 @@ h3{text-decoration: underline;}
 iframe{min-height: 400px; width: 100%; border: 0px; outline: none; overflow: auto; scrollbar-width: none; -moz-scrollbars: none;}
 iframe::-webkit-scrollbar {display: none;}
 table{max-width: 100%; overflow: scroll;}
+table.standard, td {border: 1px ridge black;}
+hide{display:none;}
