@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Results | Sonoma Pickleball Ladder</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | Sonoma Pickleball Ladder</title>
+    <style>
+      html, body { min-height:100%; }
+      iframe{ height: 100%; width: 100%; margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border: 0px; outline: none; }
+    </style>
   </head>
   <body onload="setrefresh()">
-    <center>
-      <h1>&#129692;&nbsp;Results&nbsp;&#129692;</h1>
-    </center>
-      <hr>
-      <br>
-      <center>
-      <a class="nav" rel="noreferrer" href="index.html">Homepage &#8599;</a>
-      <a class="nav" rel="noreferrer" href="how_it_works.html">How it Works &#8599;</a>
-      <a class="nav" target="_blank" rel="noreferrer" href="https://cryptpad.fr/sheet/#/2/sheet/edit/gaQQWS-YwgSKxdHOxlqUWkRt/embed/">Submit Scores &#8599;</a>
-      <a class="nav" rel="noreferrer" href="mailto:SPLconfirmations@riseup.net?subject=Yes&body=Confirming%20that%20I%20am%20at%20least%20available%20Sunday%20from%202:00%20-%204:00%20PM%20this%20coming%20week...">Confirm for Next Week &#8599;</a>
-      <a class="nav" target="_blank" rel="noreferrer" href="https://cryptpad.fr/sheet/#/2/sheet/view/k7U3auRo73AaaHKxXzYDQIUEq+04eb27Cg0Akxis9PU/embed/">Contact Players &#8599;</a>
-      <a class="nav" target="_blank" rel="noreferrer" href="groups.html">Groups &#8599;</a>
-      </center>
-     <br>
-     <hr>
-     <iframe id="results" src="https://ethercalc.nomagic.uk/sonomapickleballladderbeta.html"></iframe>
-
-     <script type="text/javascript">
-       function  setrefresh() {
-         setInterval(refresh, 600000)
-         function refresh() {
-           document.getElementById('results').src='https://ethercalc.nomagic.uk/sonomapickleballladderbgroups.html';
-         }
-       }
-     </script>
-
+  <iframe id="results" src="https://ethercalc.nomagic.uk/sonomapickleballladderbeta.html"></iframe>
+  <script type="text/javascript">
+    function  setrefresh() {
+      setInterval(refresh, 600000)
+      function refresh() {
+        document.getElementById('results').src='https://ethercalc.nomagic.uk/sonomapickleballladderbeta.html';
+      }
+    }
+  </script>
   </body>
 </html>
