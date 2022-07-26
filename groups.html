@@ -10,7 +10,15 @@
       iframe{ height: 100%; width: 100%; margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border: 0px; outline: none; }
     </style>
   </head>
-  <body>
-  <iframe src="https://ethercalc.nomagic.uk/sonomapickleballladderbgroups.html"></iframe>
+  <body onload="setrefresh()">
+  <iframe id="groups" src="https://ethercalc.nomagic.uk/sonomapickleballladderbgroups.html"></iframe>
+  <script type="text/javascript">
+    function  setrefresh() {
+      setInterval(refresh, 600000)
+      function refresh() {
+        document.getElementById('groups').src='https://ethercalc.nomagic.uk/sonomapickleballladderbgroups.html';
+      }
+    }
+  </script>
   </body>
 </html>

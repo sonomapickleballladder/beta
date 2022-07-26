@@ -6,5 +6,7 @@ h3{text-decoration: underline;}
 iframe{min-height: 400px; width: 100%; border: 0px; outline: none; overflow: auto; scrollbar-width: none; -moz-scrollbars: none;}
 iframe::-webkit-scrollbar {display: none;}
 table{max-width: 100%; overflow: scroll;}
-table.standard, td {border: 1px ridge black;}
+table.standard, td {border: 1px ridge black;outline: none;}
 hide{display:none;}
+input.var{min-width: 0px; max-width: 20px;outline: none; border: none; height: 100%;background: transparent;}
+td:focus{background:white;}

@@ -7,7 +7,7 @@
    <title>Results | Sonoma Pickleball Ladder</title>
    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body onload="setrefresh()">
     <center>
       <h1>&#129692;&nbsp;Results&nbsp;&#129692;</h1>
     </center>
@@ -23,6 +23,16 @@
       </center>
      <br>
      <hr>
-     <iframe src="https://ethercalc.nomagic.uk/sonomapickleballladderbeta.html"></iframe>
+     <iframe id="results" src="https://ethercalc.nomagic.uk/sonomapickleballladderbeta.html"></iframe>
+
+     <script type="text/javascript">
+       function  setrefresh() {
+         setInterval(refresh, 600000)
+         function refresh() {
+           document.getElementById('results').src='https://ethercalc.nomagic.uk/sonomapickleballladderbgroups.html';
+         }
+       }
+     </script>
+
   </body>
 </html>
