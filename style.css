@@ -14,6 +14,7 @@ td{text-align: center;}
 a.red{background: #6739ce; color: darkorange}
 a.orange{background:#08ab2f; color:navy;}
 a.black{background: #90acf5}
+a.white{background:#ace1f3}
 .hidden{display:none;}
 td.head{font-family: cursive; background: orange; color: teal}
 td.move{background:#88ae90;}
