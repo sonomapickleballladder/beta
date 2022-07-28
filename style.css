@@ -10,3 +10,10 @@ table.standard, td {border: 1px ridge black;outline: none;}
 hide{display:none;}
 input.var{min-width: 0px; max-width: 20px;outline: none; border: none; height: 100%;background: transparent;}
 td:focus{background:white;}
+td{text-align: center;}
+a.red{background: #6739ce; color: darkorange}
+a.orange{background:#08ab2f; color:navy;}
+a.black{background: #90acf5}
+.hidden{display:none;}
+td.head{font-family: cursive; background: orange; color: teal}
+td.move{background:#88ae90;}
