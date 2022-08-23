@@ -12,7 +12,7 @@ html,body{min-height: 100%; display: flex;
     justify-content: center;}
 input.score{max-width: calc(10% + 10px); text-align:center; max-width: calc(5% + 30px); border-width:0px 0px 2px 0px; outline: none; margin: 0px 5px;background: transparent;}
 code{padding:0px; margin: 0px 0px; font-size: 90%;width: 25%;   word-break: break-all; }
-select#group{padding: 5px 10px; outline: none}
+select{padding: 8px 12px; outline: none}
 input {margin: 5px 0px; padding: 5px;}
 button.submit{background: #6aebd1; margin: 10px; padding: 10px; min-width: calc(40vw + 100px);}
 div.hid{display:none;}
@@ -40,9 +40,9 @@ h3.hed{font-size: 150%; font-family: times; box-shadow: 0px 9px 7px 0px #78aec6;
 
 <center>
     <h3 class="hed">Please choose one of the score submission methods below</h3>
-      <a class="plain" href="https://cryptpad.fr/sheet/#/2/sheet/edit/gaQQWS-YwgSKxdHOxlqUWkRt/embed/"><button class="back" tabindex="-1" type="button" name="button">Spreadsheet <span class="info" title="requires computer and decent internet connection">i</span></button></a>
+      <a class="plain" href="https://cryptpad.fr/sheet/#/2/sheet/edit/gaQQWS-YwgSKxdHOxlqUWkRt/embed/"><button class="back" tabindex="-1" type="button" name="button">Directly into Spreadsheet (requires computer and decent internet connection)</button></a>
       <br>
-      <button onclick="prev1()" class="next2" type="button" name="button">Email</button>
+      <button onclick="prev1()" class="next2" type="button" name="button">Form submission (better for mobile devices)</button>
 
 </center>
 
@@ -342,9 +342,9 @@ h3.hed{font-size: 150%; font-family: times; box-shadow: 0px 9px 7px 0px #78aec6;
 
   <center>
 <div id="rism">
-    <button onclick="assemble()" class="next2" type="button" name="button">I have a configured email client <span class="info" title="(eg. Apple Mail, Thunderbird, etc...)">?</span></button>
+    <button onclick="assemble()" class="next2" type="button" name="button">Submit</button>
     <br>
-    <button onclick="swism()" class="next2" type="button" name="button">I do not have a configured email client</button>
+    <button onclick="swism()" class="back" type="button" name="button">Not working? Click here</button>
 </div>
 
 <div class="hid" id="tism">
@@ -645,6 +645,7 @@ function copyfunction(){
     mySmartTextarea.select();
     navigator.clipboard.writeText(mySmartTextarea.innerHTML);
     document.getElementById('copys').innerHTML="Copied";
+    setTimeout(function(){document.getElementById('copys').innerHTML='Please click anywhere in this box to copy the scores you entered to your clipboard and then paste into a new email you compose to <a href="mailto:SPLscoresubmissions@riseup.net&subject=Scores">SPLscoresubmissions@riseup.net</a>'}, 1500);
     setTimeout(reload, 60000);
     }
 
